@@ -55,14 +55,60 @@ console.log("Musica de fin de semana: ", misDatos.musicaPorGenero.kpop);
 console.log("Nombre completo: ", misDatos.nombreCompleto());
 
 
+//array
+
+const cancionesBlackPink = [
+    "Flowers",
+    "Solo",
+    "Money",
+    "Gone",
+    {
+        2020: 5,
+        2021: 30,
+        2022: 56,
+        total: 91
+    }
+];
+
+console.log("Solo de Rosé: ", cancionesBlackPink[3]);  
+console.log("Canciones compuestas en 2021: ", cancionesBlackPink[4][2021]);
+console.log("Canciones compuestas en 2021: ", cancionesBlackPink[4]["2021"]);
+console.log("Canciones compuestas en 2021: ", cancionesBlackPink[4].total);
+console.log("Canciones compuestas en 2021: ", cancionesBlackPink[4]["total"]);
+
+console.log("total de elementos" , cancionesBlackPink.length);
+console.log("Contiene la canción Flowers: ", cancionesBlackPink.includes("Flowers"))
 
 
+//----------------------------------------------------
+// conversion de datos
+
+const myNumber = 666;
+console.log("minutos de la sesion: " + myNumber )
+const  myNumberTxt = String(myNumber);
+console.log("minutos de la sesion: " + myNumberTxt )
+
+// de string a number
+const myString = "666";
+const sumatoria = 34 + Number(myString);
+console.log("Valor de sumatoria: " + sumatoria)
+
+// parseInt
+const myStringInteger = "666.66";
+const sumatoriaEnteros= 34 + parseInt(myStringInteger);
+console.log("valor de sumatoria enteros: " + sumatoriaEnteros);
 
 
+// parseFloat
+const myStringFloat = "666.66";
+const sumatoriaDecimal= 33 + parseFloat(myStringFloat);
+console.log("valor de sumatoria enteros: " + sumatoriaDecimal);
 
+//a boolean
 
+const isBelicon = "true"
 
-
-
-
-
+if (isBelicon==="false")
+    console.log("denle su belikin");
+else
+    console.log("Abre paso a la barredora");
